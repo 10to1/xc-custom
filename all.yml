@@ -13,9 +13,6 @@
     - path: ~/Documents
     - path: ~/Downloads
       sort: datemodified
-  # Stops DS_Store's from popping up
-  - role: cask_package
-    package_name: asepsis
   - role: dashboard
     disabled: YES
 
@@ -30,7 +27,7 @@
   # cli
   # shell tooling
   - role: git
-    git_user_name: 10to1 Marleen
+    git_user_name: 10to1Marleen
     git_user_email: marleen@10to1.be
   - role: legit
   - role: hub
@@ -49,6 +46,8 @@
     package_name: android-sdk
   - role: brew_package
     package_name: android-ndk
+  - role: brew_package
+    package_name: v8
   ## databases
   - role: brew_package
     package_name: postgres
@@ -67,19 +66,26 @@
   - role: brew_package
     package_name: heroku-toolbelt
 
+  ## CI
+  - role: brew_package
+    package_name: jenkins
+
   # gui
   ## text editors
   - role: cask_package
     package_name: atom
-  - role: cask_package
-    package_name: intellij-idea
   - role: cask_package
     package_name: lighttable
   - role: brew_package
     package_name: vim
   - role: brew_package
     package_name: emacs
-
   # Dropbox etc.
   - role: cask_package
-    package_name: atom
+    package_name: dropbox
+  - role: cask_package
+    package_name: iterm2
+  - role: cask_package
+    package_name: dropbox
+  - role: cask_package
+    package_name: alfred
