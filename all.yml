@@ -26,7 +26,7 @@
 
   # cli
   # shell tooling
-  - role: git
+  - role: git_package
     git_user_name: 10to1Marleen
     git_user_email: marleen@10to1.be
   - role: legit
